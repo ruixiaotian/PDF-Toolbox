@@ -1,0 +1,20 @@
+CardView,
+#view {
+    border: none;
+    background-color: transparent;
+}
+
+IconCard {
+    border-radius: 8px;
+    background-color: rgba(29, 29, 29, 99);
+}
+
+TitleLabel#NameLabel {
+    background-color: transparent;
+    color: #eeeeee;
+}
+
+StrongBodyLabel#ContentLabel {
+    background-color: transparent;
+    color: rgb(122, 122, 122);
+}

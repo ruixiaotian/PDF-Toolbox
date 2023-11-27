@@ -13,3 +13,12 @@ class MainWindowIcon(FluentIconBase, Enum):
 
     def path(self, theme=Theme.AUTO) -> str:
         return f":MainWindow/image/MainWindow/{self.value}_{getIconColor(theme)}.svg"
+
+
+class ToolsIcon(FluentIconBase, Enum):
+    WORD = "Word"
+    PPT = "PPT"
+    PDF = "PDF"
+
+    def path(self, theme=Theme.AUTO) -> str:
+        return f":ToolsPage/image/ToolsPage/{self.value}.svg"

@@ -14,6 +14,19 @@
         <file>image/HomePage/header_black.png</file>
         <file>image/HomePage/header_white.png</file>
     </qresource>
+    <qresource prefix="ToolsPage">
+        <file>image/ToolsPage/Header.jpg</file>
+        <file>image/ToolsPage/PDF.svg</file>
+        <file>image/ToolsPage/PPT.svg</file>
+        <file>image/ToolsPage/Word.svg</file>
+
+        <file>qss/light/ToolsPage/tools_card.qss</file>
+        <file>qss/dark/ToolsPage/tools_card.qss</file>
+        <file>qss/light/ToolsPage/tools_home.qss</file>
+        <file>qss/dark/ToolsPage/tools_home.qss</file>
+        <file>qss/light/ToolsPage/tools_page.qss</file>
+        <file>qss/dark/ToolsPage/tools_page.qss</file>
+    </qresource>
     <qresource prefix="SettingPage">
         <file>qss/light/SettingPage/setting_page.qss</file>
         <file>qss/dark/SettingPage/setting_page.qss</file>

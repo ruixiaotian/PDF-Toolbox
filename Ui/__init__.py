@@ -23,6 +23,7 @@ from qframelesswindow.titlebar import MaximizeButton, MinimizeButton, CloseButto
 
 from Core.ConfigFunction.Url import FEEDBACK_URL, REPO_URL
 from Ui.HomePage import HomeWidget
+from Ui.ToolsPage import ToolsWidget
 from Ui.SettingPage import SettingWidget
 from Ui.StyleSheet import MainWindowStyleSheet
 from Ui.icon import MainWindowIcon
@@ -44,7 +45,7 @@ class MainWindow(MSFluentWindow):
         # 设置窗体大小以及打开时居中
         desktop = QApplication.desktop().availableGeometry()
         w, h = desktop.width(), desktop.height()
-        self.setMinimumSize(w - 100, h - 100) if w < 1280 and h < 780 else self.setMinimumSize(1280, 780)
+        self.setMinimumSize(w - 100, h - 100) if w < 1000 and h < 780 else self.setMinimumSize(1000, 780)
         self.move(w // 2 - self.width() // 2, h // 2 - self.height() // 2)
         # 创建初始屏幕
         self.splashScreen = SplashScreen(MainWindowIcon.LOGO, self, True)
@@ -62,9 +63,11 @@ class MainWindow(MSFluentWindow):
 
         # 初始化子页面
         it(HomeWidget).initialize(self)
+        it(ToolsWidget).initialize(self)
         it(SettingWidget).initialize(self)
 
         self.homeWidget = it(HomeWidget)
+        self.toolsWidget = it(ToolsWidget)
         self.settingWidget = it(SettingWidget)
 
         # 添加子页面
@@ -72,6 +75,13 @@ class MainWindow(MSFluentWindow):
             interface=self.homeWidget,
             icon=FluentIcon.HOME,
             text=self.tr("Home"),
+            position=NavigationItemPosition.TOP,
+        )
+
+        self.addSubInterface(
+            interface=self.toolsWidget,
+            icon=FluentIcon.DEVELOPER_TOOLS,
+            text=self.tr("Tools"),
             position=NavigationItemPosition.TOP,
         )
 

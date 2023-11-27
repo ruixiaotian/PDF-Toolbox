@@ -28,6 +28,17 @@ class HomePageStyleSheet(StyleSheetBase, Enum):
         return Path(f":HomePage/qss/{theme.value.lower()}/HomePage/{self.value}.qss").__str__()
 
 
+class ToolsPageStyleSheet(StyleSheetBase, Enum):
+    """菜单样式表"""
+    HOME_PAGE = "tools_home"
+    TOOLS_CARD = "tools_card"
+    TOOLS_PAGE = "tools_page"
+
+    def path(self, theme=Theme.AUTO):
+        theme = qconfig.theme if theme == Theme.AUTO else theme
+        return Path(f":ToolsPage/qss/{theme.value.lower()}/ToolsPage/{self.value}.qss").__str__()
+
+
 class SettingPageStyleSheet(StyleSheetBase, Enum):
     """设置页面样式表"""
 

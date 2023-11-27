@@ -31,12 +31,12 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     # 加载翻译
-    locale = cfg.get(cfg.language).value
-    fluentTranslator = FluentTranslator(locale)
-    settingTranslator = QTranslator()
-    settingTranslator.load(locale, "MenuInstaller", "_", "Ui/resource/i18n")
-    app.installTranslator(fluentTranslator)
-    app.installTranslator(settingTranslator)
+    # locale = cfg.get(cfg.language).value
+    # fluentTranslator = FluentTranslator(locale)
+    # settingTranslator = QTranslator()
+    # settingTranslator.load(locale, "MenuInstaller", "_", "Ui/resource/i18n")
+    # app.installTranslator(fluentTranslator)
+    # app.installTranslator(settingTranslator)
 
     # 显示窗体
     it(MainWindow)

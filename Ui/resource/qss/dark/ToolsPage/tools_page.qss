@@ -1,0 +1,16 @@
+QWidget {
+    background-color: transparent;
+    border: none;
+}
+
+#nameLabel, #urlLabel, #installButton {
+    color: #eeeeee;
+}
+
+#statisticsTitleLabel, #systemDemandTitleLabel {
+    color: rgb(206, 206, 206);
+}
+
+#statisticsValueLabel, #systemDemandValueLabel {
+    color: rgb(245, 245, 245);
+}
