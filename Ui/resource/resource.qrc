@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="MainWindow">
+        <file>image/MainWindow/avatar.png</file>
+        <file>image/MainWindow/Logo_black.svg</file>
+        <file>image/MainWindow/Logo_white.svg</file>
+        <file>qss/dark/MainWindow/main_window.qss</file>
+        <file>qss/light/MainWindow/main_window.qss</file>
+    </qresource>
+    <qresource prefix="HomePage">
+        <file>qss/dark/HomePage/home_widget.qss</file>
+        <file>qss/light/HomePage/home_widget.qss</file>
+        <file>qss/dark/HomePage/link_card.qss</file>
+        <file>qss/light/HomePage/link_card.qss</file>
+        <file>image/HomePage/header_black.png</file>
+        <file>image/HomePage/header_white.png</file>
+    </qresource>
+    <qresource prefix="SettingPage">
+        <file>qss/light/SettingPage/setting_page.qss</file>
+        <file>qss/dark/SettingPage/setting_page.qss</file>
+    </qresource>
+</RCC>

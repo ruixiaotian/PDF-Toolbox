@@ -1,0 +1,7 @@
+BodyLabel {
+    color: #FFFFFF;
+}
+
+CaptionLabel {
+    color: rgb(206, 206, 206);
+}
